@@ -13,12 +13,19 @@ html.no-face .reveal {
 	background: url(images/yaoming-meme-1920x1200.jpg) no-repeat center center fixed;"
 }
 
-section.PROS-custom-transition.past {
-
+html.menu-frame .reveal {
+	background: url(images/menuframe.png) no-repeat center center fixed;"
 }
-section.PROS-custom-transition.preset {
 
+.bold {
+	color: red;
 }
-section.PROS-custom-transition.future {
-	
+
+h2.main-text {
+	font-size: 4em;
+	text-align: left;
+}
+
+font.main-text {
+	font-size: 4em;
 }
