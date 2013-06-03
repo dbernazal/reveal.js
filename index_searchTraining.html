@@ -24,15 +24,17 @@
         <script>
             document.write( '<link rel="stylesheet" href="../../../framework/html5Presentation/hakimel-reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 
-            /*window.addEventListener("mousedown", handleClick, false);
+            window.addEventListener("mousedown", handleClick, false);
             window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
 
             function handleClick(e) {
                 e.preventDefault();
                 if(e.button === 0) Reveal.next(); 
                 if(e.button === 2) Reveal.prev(); 
-            }*/
+            }
         </script>
+
+        <script src="../../../framework/scripts/monolithUif.js"></script>
 
         <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
@@ -58,13 +60,8 @@
 <section data-markdown>
 <script type="text/javascript">[Try Search](http://nbollepa-pc1:8080/PPSS/salesui/globalsearch/GlobalSearch.html)</script>
 </section>
-
-<script src="../../../framework/scripts/monolithUif.js"></script>
-<section data-markdown>
-<script type="text/javascript">PageRequest.showPage("SO_GlobalSearchResults");</script>
-</section>
-
-
+        <section data-state="customevent">          
+        </section>
         </div>
         </div>
 
@@ -73,9 +70,13 @@
         <script src="../../../framework/html5Presentation/hakimel-reveal.js/js/util.js"></script>
         <script src="../../../framework/html5Presentation/hakimel-reveal.js/lib/js/jquery-1.9.1.js"></script>
         <script src="../../../framework/html5Presentation/hakimel-reveal.js/lib/js/jquery-ui-1.10.2.custom.min.js"></script>
-        <script src="../../../framework/scripts/monolithUif.js"></script>
-
+        
         <script>
+
+         document.addEventListener('customevent', function(){
+            PageRequest.showPage("SO_GlobalSearchResults");
+      });
+
 
             // Full list of configuration options available here:
             // https://github.com/hakimel/reveal.js#configuration

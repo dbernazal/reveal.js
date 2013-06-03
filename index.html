@@ -23,6 +23,15 @@
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+
+			window.addEventListener("mousedown", handleClick, false);
+            window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+            function handleClick(e) {
+                e.preventDefault();
+                if(e.button === 0) Reveal.next(); 
+                if(e.button === 2) Reveal.prev(); 
+            }
 		</script>
 
 		<!--[if lt IE 9]>
