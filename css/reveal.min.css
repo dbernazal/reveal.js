@@ -29,3 +29,13 @@ h2.main-text {
 font.main-text {
 	font-size: 4em;
 }
+
+h2.main-text-center {
+	font-size: 2em;
+	text-align: center;
+}
+
+h3.main-text-center {
+	font-size: 2em;
+	text-align: center;
+}
