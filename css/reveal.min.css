@@ -17,15 +17,45 @@ html.menu-frame .reveal {
 	background: url(images/menuframe.png) no-repeat center center fixed;"
 }
 
+html.html5 {
+	background: url(images/orange_dual_screen_logos_html5_desktop_1920x1080_hd-wallpaper-1087633.png) no-repeat center center fixed;"
+	background-size: cover;
+}
+
+html.puss {
+	background: url(images/PussInBoots1.gif) no-repeat center center fixed;"
+	background-size: cover;
+}
+
+html.html5 body {
+	background: none;
+}
+
+html.puss body {
+	background: none;
+}
+
+html.no-face body {
+	background: none;
+}
+
 .bold {
-	color: red;
+	color: yellow;
 }
 
 h2.main-text {
-	font-size: 4em;
+	font-size: 2em;
 	text-align: left;
 }
 
-font.main-text {
+h2.puss-text {
 	font-size: 4em;
+	text-align: left;
+	position: absolute;
+	left: -50px;
+	top: -280px;
+}
+
+font.main-text {
+	font-size: 2em;
 }

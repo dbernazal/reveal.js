@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'BellotaRegular';
+    src: url('bellota-regular.eot');
+    src: url('bellota-regular.eot') format('embedded-opentype'),
+         url('bellota-regular.woff') format('woff'),
+         url('bellota-regular.ttf') format('truetype'),
+         url('bellota-regular.svg#BellotaRegular') format('svg');
+}
