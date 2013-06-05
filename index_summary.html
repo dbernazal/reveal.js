@@ -24,14 +24,7 @@
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 
-			window.addEventListener("mousedown", handleClick, false);
-            window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-
-            function handleClick(e) {
-                e.preventDefault();
-                if(e.button === 0) Reveal.next(); 
-                if(e.button === 2) Reveal.prev(); 
-            }
+			
 		</script>
 
 		<!--[if lt IE 9]>
@@ -47,43 +40,44 @@
 
 		<div class="slides">
 
-	        <section>
-	            <h2 class="main-text-center"> What <font color="orange">more</font> does HTML5 offer ? </h2>
-	        </section>
 
-	        <section>
-				<h2 class="main-text-center"> High <font color="orange">interactability</font></h2>
-				<p class="fragment roll-in">Drag &amp; drop</p>
-				<p class="fragment roll-in">Document editing</p>
-				<p class="fragment roll-in">Graphs &amp; charts</p>
+	        <section data-state="whiteBg">			
+			<a href="#" class="image navigate-down">
+                    <img style="left: -300px;position: relative;border: none;background: none;box-shadow:none;" src="../../../framework/html5Presentation/reveal.js/images/IEToCBMin.png">
+        		    </a>
 
-				<aside class="notes">
-					Interactability through drag and drop, document editing, graphs and charts.
-					Heavy support for animations and transition allows the possibility to create complicated dynamic visual effects through CSS3 rather than flash. 
-				</aside>
+			<div class="fragment roll-in">
+                 <div>
+                 	<a href="#" class="image navigate-down">
+                    <img style="bottom: 45px; left:-100px;position: relative;border: none;background: none;box-shadow:none;" src="../../../framework/html5Presentation/reveal.js/images/plusHtml5Min_WhiteBg.png">
+        		    </a>
+        		</div>
+            </div>
+
+            <div class="fragment roll-in">
+                 <div>
+                 	<a href="#" class="image navigate-down">
+                    <img style="bottom:500px;left: 600px;position: relative;border: none;background: none;box-shadow:none;" src="../../../framework/html5Presentation/reveal.js/images/awesomenessMin_WhiteBg.png">
+        		    </a>
+        		</div>
+            </div>
 			</section>
 
 			<section>
-				<h2 class="main-text-center">User <font color="orange">Experience</font></h2>
-				<p class="fragment roll-in">Responsive web design</p>
-				<p class="fragment roll-in">Accessibility</p>
-
-				<aside class="notes">
-					Graceful degradation is where you create the flashy site first and then degrade for older browsers.
-							Progressive enhancement is where you start with a basic design and add enhancements for newer browsers.
-							Accessibility - semantics and ARIA
-				</aside>
-	        </section>
+			 <a href="#" class="image navigate-down">
+			                <img height="70%" src="../../../framework/html5Presentation/reveal.js/images/beginning.jpg">
+			 </a>   
+			</section>
 
 	        <section>
 			 <a href="#" class="image navigate-down">
-			                <img height="50%" src="../../../framework/html5Presentation/reveal.js/images/circaware-endless.jpg">
+			                <img height="70%" src="../../../framework/html5Presentation/reveal.js/images/circaware-endless.jpg">
 			 </a>   
 			</section>
         
 			<section>
 			 <a href="#" class="image navigate-down">
-			                <img height="50%" src="../../../framework/html5Presentation/reveal.js/images/doras-questions.jpg">
+			                <img height="80%" src="../../../framework/html5Presentation/reveal.js/images/doras-questions.jpg">
 			 </a>   
 			</section>
 

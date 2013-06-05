@@ -23,15 +23,6 @@
         <!-- If the query includes 'print-pdf', use the PDF print sheet -->
         <script>
             document.write( '<link rel="stylesheet" href="../../../framework/html5Presentation/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-
-            window.addEventListener("mousedown", handleClick, false);
-            window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-
-            function handleClick(e) {
-                e.preventDefault();
-                if(e.button === 0) Reveal.next(); 
-                if(e.button === 2) Reveal.prev(); 
-            }
         </script>
 
         <script src="../../../framework/scripts/monolithUif.js"></script>
@@ -51,7 +42,7 @@
             </section>
 
             <section>
-                <h2 class="main-text-center">Steps to be performed in search</h2>
+                <h2 class="main-text-center">Follow these steps</h2>
                 <ul>
                     <li class="fragment">Enter a search text and hit Search button</li>
                     <li class="fragment">Add filters to narrow the search results</li>
