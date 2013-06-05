@@ -27,6 +27,11 @@ html.puss {
 	background-size: cover;
 }
 
+html.whiteBg {
+	background: url(images/whiteBg.png) no-repeat center center fixed;"
+	background-size: contain;
+}
+
 html.html5 body {
 	background: none;
 }
@@ -36,6 +41,10 @@ html.puss body {
 }
 
 html.no-face body {
+	background: none;
+}
+
+html.whiteBg body {
 	background: none;
 }
 
