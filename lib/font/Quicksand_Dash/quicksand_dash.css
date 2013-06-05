@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'QuicksandDash';
+    src: url('quicksand_dash.eot');
+    src: url('quicksand_dash.eot') format('embedded-opentype'),
+         url('quicksand_dash.woff') format('woff'),
+         url('quicksand_dash.ttf') format('truetype'),
+         url('quicksand_dash.svg#QuicksandDash') format('svg');
+}
