@@ -1,3 +1,7 @@
+/*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
 // Custom reveal.js integration
 (function(){
 	var isEnabled = true;

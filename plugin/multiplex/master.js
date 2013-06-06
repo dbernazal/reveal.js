@@ -1,3 +1,8 @@
+/*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
+
 (function() {
 	// don't emit events from inside the previews themselves
 	if ( window.location.search.match( /receiver/gi ) ) { return; }

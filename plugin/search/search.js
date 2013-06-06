@@ -1,4 +1,8 @@
 /*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
+/*
  * Handles finding a text string anywhere in the slides and showing the next occurrence to the user
  * by navigatating to that slide and highlighting it.
  *

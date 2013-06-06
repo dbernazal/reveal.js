@@ -1,3 +1,7 @@
+/*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
 /* global module:false */
 module.exports = function(grunt) {
 
