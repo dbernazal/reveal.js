@@ -57,6 +57,10 @@ html.whiteBg body {
 	background: none;
 }
 
+html.light-grey body {
+	background: -webkit-radial-gradient(center, circle cover, #dfe5d7 0%, #b3bead 100%);
+}
+
 .bold {
 	color: yellow;
 }
