@@ -1,3 +1,8 @@
+/*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
+
 (function() {
 	var multiplex = Reveal.getConfig().multiplex;
 	var socketId = multiplex.id;

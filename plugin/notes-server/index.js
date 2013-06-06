@@ -1,3 +1,7 @@
+/*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
 var express   = require('express');
 var fs        = require('fs');
 var io        = require('socket.io');

@@ -1,4 +1,8 @@
 /*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
+/*
 
 	simple postmessage plugin
 

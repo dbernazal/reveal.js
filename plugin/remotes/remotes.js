@@ -1,3 +1,7 @@
+/*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
 /**
  * Touch-based remote controller for your presentation courtesy 
  * of the folks at http://remotes.io

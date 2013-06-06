@@ -1,10 +1,14 @@
+/*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
 var express		= require('express');
 var fs			= require('fs');
 var io			= require('socket.io');
 var crypto		= require('crypto');
 
 var app			= express.createServer();
-var staticDir	= express['static'];
+var staticDir	= express.static;
 
 io				= io.listen(app);
 
