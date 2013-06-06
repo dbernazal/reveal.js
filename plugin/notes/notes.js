@@ -1,3 +1,7 @@
+/*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
 /**
  * Handles opening of and synchronization with the reveal.js
  * notes window.

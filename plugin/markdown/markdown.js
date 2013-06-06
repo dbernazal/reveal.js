@@ -1,3 +1,7 @@
+/*
+ * $DEPLOY_DO_NOT_COMPRESS$
+ * $DEPLOY_DO_NOT_CONCAT$
+ */
 // From https://gist.github.com/1343518
 // Modified by Hakim to handle Markdown indented with tabs
 (function(){
