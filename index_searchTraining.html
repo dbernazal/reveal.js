@@ -48,7 +48,7 @@
                     <li class="fragment">Add filters to narrow the search results</li>
                 </ul>
             </section>
-<section data-markdown>
+<section data-markdown data-state="addPageState">
 <script type="text/javascript">[Try Search](http://nbollepa-pc1:8080/PPSS/salesui/globalsearch/GlobalSearch.html)</script>
 </section>
         <section data-state="customevent">          
@@ -68,6 +68,11 @@
             PageRequest.showPage("SO_GlobalSearchResults");
       });
 
+         document.addEventListener('addPageState', function(){
+             var pr = new PageRequest();
+            pr.setState("searchTrainingInProgress", true);
+            PageRequest.updateStateWithoutHistory(pr);
+         });
 
             // Full list of configuration options available here:
             // https://github.com/hakimel/reveal.js#configuration
@@ -92,10 +97,6 @@
                     // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
                 ]
             });
-
-            var pr = new PageRequest();
-            pr.setState("searchTrainingInProgress", true);
-            PageRequest.updateStateWithoutHistory(pr);
 
         </script>
 
