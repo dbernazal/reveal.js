@@ -23,15 +23,6 @@
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-
-			window.addEventListener("mousedown", handleClick, false);
-            window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-
-            function handleClick(e) {
-                e.preventDefault();
-                if(e.button === 0) Reveal.next(); 
-                if(e.button === 2) Reveal.prev(); 
-            }
 		</script>
 
 		<!--[if lt IE 9]>
@@ -221,39 +212,72 @@
         </section>
 
         <section>
-             <a href="#" class="image navigate-down">
-                 <img height="50%" src="../../../framework/html5Presentation/reveal.js/images/open-doors.jpg">
-            </a>
+            <a href="#">
+            	<img style="width:50%;height:50%;bottom:10px;left:240px; position: relative;border: none;background: none;box-shadow:none;" src="../../../framework/html5Presentation/reveal.js/images/open-doors.jpg">
+        	</a>
 
-             <div class="fragment">
-                 <div>Opens so many doors...</div>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="main-text-center">You can embed <font color="orange">videos</font></h2>
-        	<a href="#">
-                <img height="50%" src="../../../framework/html5Presentation/reveal.js/images/VideoLogo.jpeg">
-        	</a>            
-        </section>
-
-        <section>
-            <h2 class="main-text-center">You can incorporate <font color="orange">slides</font></h2>
-             <a href="#" class="image navigate-down">
-                    <img height="50%" src="../../../framework/html5Presentation/reveal.js/images/Slides2.png">
-            </a>
-        </section>
-
-        <section>
-            <h2 class="main-text-center">Add <font color="orange">additional behavior</font></h2>
-
-            <div class="fragment">
+        	<div class="fragment roll-in" style="bottom:400px;left:-150px; position: relative;">
                  <div>
-                 	<a href="#" class="image navigate-down">
-                    <img height="50%" src="../../../framework/html5Presentation/reveal.js/images/thirdPartyTools.jpg">
-        		    </a>
+                 	<h2 class="main-text">
+			    		<font color="black">Opens</font>
+			        </h2>
+			        <h2 class="main-text">
+			        	<font color="orange">many doors ...</font> 
+			        </h2> 
         		</div>
             </div>
+        </section>
+
+        <section>
+        	<a href="#">
+            	<img style="width:30%;height:30%;bottom:-100px;left:100px; position: relative;border: none;background: none;box-shadow:none;" src="../../../framework/html5Presentation/reveal.js/images/VideoLogo.jpeg">
+        	</a>
+
+        	<div style="bottom:140px;left:10px; position: relative;">
+                 <div>
+                 	<h2 class="main-text">
+			    		<font color="black">Embed</font>
+			        </h2>
+			        <h2 class="main-text">
+			        	<font color="orange">Videos</font> 
+			        </h2> 
+        		</div>
+            </div>            
+        </section>
+
+        <section>
+        	<a href="#">
+            	<img style="width:70%;height:80%;bottom:-100px;left:260px; position: relative;border: none;background: none;box-shadow:none;" src="../../../framework/html5Presentation/reveal.js/images/Slides2.png">
+        	</a>
+
+        	<div style="bottom:140px;left:-150px; position: relative;">
+                 <div>
+                 	<h2 class="main-text">
+			    		<font color="black">Incorporate</font>
+			        </h2>
+			        <h2 class="main-text">
+			        	<font color="orange">Slides</font> 
+			        </h2> 
+        		</div>
+            </div>
+        </section>
+
+        <section>            
+          <a href="#">
+            	<img style="width:90%;height:90%;bottom:-100px;left:220px; position: relative;border: none;background: none;box-shadow:none;" src="../../../framework/html5Presentation/reveal.js/images/thirdPartyTools.jpg">
+        	</a>
+
+        	<div style="bottom:140px;left:-150px; position: relative;">
+                 <div>
+                 	<h2 class="main-text">
+			    		<font color="black">Add</font>
+			        </h2>
+			        <h2 class="main-text">
+			        	<font color="orange">behavior</font> 
+			        </h2> 
+        		</div>
+            </div>
+
         </section>
 
         <section>
@@ -271,7 +295,7 @@
             	<img style="bottom:-100px;left:100px; position: relative;border: none;background: none;box-shadow:none;" src="../../../framework/html5Presentation/reveal.js/css/images/training.jpg">
         	</a>
 
-        	<div class="fragment roll-in" style="bottom:140px;left:-100px; position: relative;">
+        	<div style="bottom:140px;left:-100px; position: relative;">
                  <div>
                  	<h2 class="main-text">
 			    		<font color="black">Tackling</font>
