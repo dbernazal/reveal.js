@@ -32,6 +32,15 @@ html.whiteBg {
 	background-size: contain;
 }
 
+html.fireworks {
+	background: url(images/Fireworks_2009_1920x1200.jpg) no-repeat center center fixed;"
+	background-size: cover;
+}
+
+html.fireworks body {
+	background: none;
+}
+
 html.html5 body {
 	background: none;
 }

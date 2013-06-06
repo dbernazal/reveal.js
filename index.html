@@ -137,31 +137,8 @@
 			</section>
 			<section>
 			            <h2>Old method</h2>
-			                <pre><code style="max-height: 450px;">
-&lt;html&gt;
-  &lt;body onload="Pros.MenuFrame.initialize()"&gt;
-      &lt;topLevelMenuGoesHere&gt;
-      &lt;div id="mainContainer"&gt;
-        &lt;iframe src='?control=none'&gt;
-          &lt;html scripts="..."&gt;<span id="oldBody" class="fragment fade-in" data-fragment-index="0"><span class="fragment fade-out" data-fragment-index="1">
-            &lt;body onload="someMethodsToCallLater()"&gt;
-              &lt;bodyPresence
-                title="Page Title"
-                bodyId="page_body_id"
-                onshowPage="someMethodsToCallLater()"/&gt;
-              &lt;pageContent/&gt;
-            &lt;/body&gt;</span></span><span id="newBody" class="fragment fade-in" style="display: none;" data-fragment-index="2">
-            &lt;body onload="someNewMethodsToCallLater()"&gt;
-              &lt;bodyPresence
-                title="New Page Title"
-                bodyId="new_page_body_id"/&gt;
-              &lt;pageContent/&gt;
-            &lt;/body&gt;</span>
-          &lt;/html&gt;
-        &lt;/iframe&gt;
-      &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+			                <pre style="width: 80%;"><code>
+DocumentUtil.getMainDocument().body.innerHTML = Pros.getText( bodyNode );
 			                    </code></pre>
 
 
@@ -170,32 +147,18 @@
 			</section>
 			<section>
 			<h2>New method</h2>
-			                <pre><code style="max-height: 450px;">
-&lt;html&gt;
-  &lt;body onload="Pros.MenuFrame.initialize()"&gt;
-      &lt;topLevelMenuGoesHere&gt;
-      &lt;div id="mainContainer"&gt;
-        &lt;iframe src="path/to/html5/page"&gt;<span id="oldMethodBody" class="fragment fade-in" data-fragment-index="0"><span class="fragment fade-out" data-fragment-index="1">
-          &lt;html&gt;
-            &lt;body onload="someMethodsToCallLater()"&gt;
-              &lt;pageContent&gt;
-            &lt;/body&gt;
-          &lt;/html&gt;</span></span><span id="newMethodBody" class="fragment fade-in" style="display: none;" data-fragment-index="2">
-          &lt;new html&gt;
-            &lt;body onload="someNewMethodsToCallLater()"&gt;
-              &lt;pageContent&gt;
-            &lt;/body&gt;
-          &lt;/new html&gt;</span>
-        &lt;/iframe&gt;
-      &lt;/div&gt;
-      &lt;bodyPresence
-        title="Page Title"
-        bodyId="page_body_id"/&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+			                <pre style="width: 70%;"><code>
+		src = "some/path/to/html5Index"
+		iframeBody.innerHTML = "";
+		modernIframe.src = src;
 			                    </code></pre>
 
 				</section>
+		<section data-state="puss">
+			<h2 class="puss-text">Now?</h2>
+		</section>
+		<section data-state="fireworks">
+		</section>
 
 		<section data-state="whiteBg">
             <a href="#" class="image navigate-down">
