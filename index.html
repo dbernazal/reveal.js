@@ -76,6 +76,47 @@
 			        begin
 			    </h2>
 			</section>
+			<section>
+				 <pre style="width: 80%;"><code>if(!Element.prototype.selectSingleNode){
+    Element.prototype.selectSingleNode = function(elementPath){
+		var xmlDoc = this;
+		var xpe = new XPathEvaluator();
+		var nsResolver = xpe.createNSResolver(
+			xmlDoc.ownerDocument==null?xmlDoc.documentElement:xmlDoc.ownerDocument.documentElement);
+	   		var results = xpe.evaluate(
+				elementPath,
+				xmlDoc,
+				nsResolver,
+				XPathResult.FIRST_ORDERED_NODE_TYPE,
+				null);
+		if (results != null) {
+	    	return results.singleNodeValue;
+		} else {
+		return null;
+		}}}
+			     </code></pre>
+			</section>
+			<section>
+				 <pre style="width: 80%;"><code>	public:component lightWeight="true"
+	  ATTACH   EVENT="ondetach" HANDLER="destroy"
+	  ATTACH   EVENT="ondocumentready" HANDLER="DoInit"
+	  ATTACH   EVENT="onpropertychange"  HANDLER="updateBindings"
+	  ATTACH   EVENT="onunload" HANDLER="destroy"
+
+	  public:METHOD NAME = "click"
+	  public:METHOD NAME = "mouseOver"
+	  public:METHOD NAME = "setDisabled"
+
+	  /**
+	   * HTC Core Functions
+	   */
+	  script language="JScript"
+	    this.button;
+	    this.isReady = false;
+	    this.callBackList = new Object();
+			     </code></pre>
+			</section>
+
 			<section style="color: red;text-align: left;">
 			    <h2 class="main-text">One</h2>
 			    <h2 class="main-text bold"><font color="orange">Menu Frame&nbsp;</font></h2>
